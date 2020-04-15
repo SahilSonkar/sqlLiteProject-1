@@ -1,0 +1,62 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        app:cardElevation="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gocery Items"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/List_row_grocery_item"/>
+            <TextView
+                android:id="@+id/List_row_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="quantity"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_below="@+id/List_row_grocery_item"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:id="@+id/List_row_date"
+                android:layout_below="@+id/List_row_quantity"/>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="60dp">
+
+                <Button
+                    android:id="@+id/List_row_EditButton"
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_edit_black_24dp"/>
+                <Button
+                    android:id="@+id/List_row_DeleteButton"
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:background="@drawable/ic_delete_sweep_black_24dp"/>
+            </TableRow>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
